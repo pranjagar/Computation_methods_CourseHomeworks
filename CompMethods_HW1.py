@@ -52,18 +52,25 @@ plt.ylabel("y")
 #plt.show()
 """
 
-fig,axes=plt.subplots(1,3,figsize=(16, 5))
-ax1 = axes[0].plot(x,y)
-ax2 = axes[1].plot(x1,y1)
-ax3= axes[2].plot(x2,y2)
+fig,axes=plt.subplots(1,3,figsize=(17, 5))
+axes[0].plot(x,y)
+axes[1].plot(x1,y1)
+axes[2].plot(x2,y2)
 axes[0].set_title('Deltoid Curve')
+axes[0].set_xlabel("x")
+axes[0].set_ylabel("y")
+
 axes[1].set_title('Galilean Spiral')
+axes[1].set_xlabel("x")
+axes[1].set_ylabel("y")
+
 axes[2].set_title('Fey Function')
+axes[2].set_xlabel("x")
+axes[2].set_ylabel("y")
+# plt.title('HW 01 Pranjal_Sept 14')
 
-plt.title('HW 01 Pranjal_Sept 14')
-
-plt.xlabel('x')
-plt.ylabel('y')
+# plt.xlabel('x')
+# plt.ylabel('y')
 #problem: for some reason x and y are labelled just for the third plot and same if I create plt.title - it just adds it to the third one
 plt.show() #and we get 2 plots on the same figure
 
