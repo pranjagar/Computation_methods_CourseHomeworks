@@ -38,8 +38,3 @@ plt.title('Error function plot')
 plt.xlabel("x")
 plt.ylabel("E(x)")
 plt.show()
-
-
-
-
-
