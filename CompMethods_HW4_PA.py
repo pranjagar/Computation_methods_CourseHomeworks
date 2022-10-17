@@ -31,9 +31,19 @@ y =1                  # (dummy) starting output value
 while y > 1e-3:                          # newton's method loop
     r -= f(r)/(deriv(r))                # r is modified according the newton/secant method
     y = f(r)                              # dummy value is reassigned as the output number
-print(f'Newton Raphson method solution is {r} meters')
+print(f'\nNewton Raphson method solution is {r} meters \n')
+# checking if the solution worked
+print(f'Plugging in Newton method solution gives: {f(r)}')
+if f(r) < 1e-3:
+    print('The solution works! \n')
+
 
 while y > 1e-3:                         # secant method loop
     r -= f(r)/(df(r))
     y = f(r) 
-print(f'Secant method solution is {r} meters')
+print(f'Secant method solution is {r} meters \n')
+# checking if the solution worked
+print(f'Plugging in Secant method solution gives: {f(r)}')
+
+if f(r) < 1e-3:
+    print('The solution works! \n')
